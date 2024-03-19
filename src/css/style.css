@@ -44,6 +44,10 @@ body::after { /* this pseudo-element that creates an overlay effect is assissted
 	padding: 1em;
 }
 
+.wrap > .tips ul li {
+    text-align: left;
+}
+
 .top-attractions ol li{
 	margin-bottom:380px;
 }
@@ -90,4 +94,75 @@ footer {
     color: white;
     text-align: center;
     z-index: 2; 
+}
+
+/*all media query section have contained ChatGPT content*/
+
+/*ipad*/
+@media only screen and (max-width: 834px) {
+    body {
+        background-size: cover;
+    }
+
+    .subheading, .tips, .wrap, .main > .top-attractions, .main > .pics, header, footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main > .top-attractions, .main > .pics {
+        max-width: 80%; 
+    }
+
+    .main {
+        justify-content: space-between; 
+    }
+
+    .main > .top-attractions {
+        margin-right: 10px; 
+    }
+
+    .main > .pics {
+        margin-left: 10px; 
+    }
+
+    .main > .top-attractions ol li {
+        margin-bottom: 20px;
+    }
+
+    .main > .top-attractions p,
+    .wrap > .local p,
+    .wrap > .tips ul {
+        text-align: left; /* Left-align the paragraphs and ul */
+    }
+}
+
+/*iPhone*/
+@media only screen and (max-width: 320px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main > .top-attractions, .main > .pics {
+        max-width: 100%; 
+    }
+
+    .top-attractions ol li {
+        margin-bottom: 20px; 
+    }
+
+    .main > .top-attractions ol li:nth-child(odd) {
+        order: 1; 
+    }
+
+    .main > .pics img:nth-child(even) {
+        order: 2; 
+    }
+
+    .main > .top-attractions p,
+    .wrap > .local p,
+    .wrap > .tips ul {
+        text-align: left; /* Left-align the paragraphs and ul */
+    }
 }
