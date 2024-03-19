@@ -134,7 +134,7 @@ footer {
     .main > .top-attractions p,
     .wrap > .local p,
     .wrap > .tips ul {
-        text-align: left; /* Left-align the paragraphs and ul */
+        text-align: left;
     }
 }
 
@@ -163,6 +163,6 @@ footer {
     .main > .top-attractions p,
     .wrap > .local p,
     .wrap > .tips ul {
-        text-align: left; /* Left-align the paragraphs and ul */
+        text-align: left;
     }
 }
